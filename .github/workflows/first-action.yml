@@ -1,0 +1,14 @@
+# Name of Workflow
+name: First Workflow
+
+# When this workflow to be execute, Trigger when
+on: workflow_dispatch #The workflow has to be trigger manually. Event Name: workflow_dispatch
+
+jobs:
+  first-job: #Name of the First job, NOT KEYWORD
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting #Name of the first step
+        run: echo "Hello World"
+      - name: Print goodbye #Name of the second step
+        run: echo "Done - bye!
